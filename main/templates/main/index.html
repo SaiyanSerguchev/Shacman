@@ -1,39 +1,54 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 {% block content %}
-<header class="bg-white">
-<nav class="container-xxl bd-gutter d-flex align-items-md-center navbar navbar-expand-lg navbar-light ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="{% static 'main/img/logo.png' %}" alt="logo" width="200" >
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-md-auto me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Преимущества</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Оплата и доставка</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Гарантия и сервис</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
-        </li>
-        <a id="button-nav1" class="button-nav1 cc-btn" data-modal="" data-modalid="modal-ce4ec10">Заказать звонок</a>
-      </ul>
-    </div>
-  </div>
-</nav>
+<header class="blog-header bg-white">
+    <nav class="container-xxl bd-gutter d-flex align-items-md-center navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'main/img/logo.png' %}" alt="logo" width="200" >
+        </a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-md-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Гарантия и сервис</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <a class="link-secondary mt-2" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Поиск</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+            </a>
+              <a id="button-nav1" class="button-nav1 cc-btn" data-modalid="modal-ce4ec10">Заказать звонок</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
 </header>
-    <div></div>
-    <b></b>
-    <a></a>
+<section class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{% static 'main/img/truck.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Китайские седельные тягачи с доставкой из Минска</h1>
+        <p class="lead">Chinatruckbel занимается поставкой и продажей тягачей из Китая. Наша компания специализируется на продаже качественных седельных тягачей, которые отвечают самым высоким требованиям и стандартам.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="ml-0 button-nav1 btn-lg px-4 me-md-2">Перейти к каталогу</button>
+
+        </div>
+      </div>
+    </div>
+</section>
 {% endblock %}

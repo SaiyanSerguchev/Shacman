@@ -11,7 +11,7 @@
     text-align: center;
     transition: all 0.4s ;
     padding: 11px 23px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 .button-nav1:hover {
     opacity: 0.8;
@@ -20,4 +20,11 @@
 .navbar-nav {
     gap:15px;
 
+}
+
+.blog-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+.ml-0 {
+    margin-left: 0px;
 }
