@@ -1,5 +1,36 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block content %}
-Test
+<header class="bg-white">
+<nav class="container-xxl bd-gutter d-flex align-items-md-center navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="{% static 'main/img/logo.png' %}" alt="logo" width="200" >
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-md-auto me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Преимущества</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Оплата и доставка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Гарантия и сервис</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+        <a id="button-nav1" class="button-nav1 cc-btn" data-modal="" data-modalid="modal-ce4ec10">Заказать звонок</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
 {% endblock %}
