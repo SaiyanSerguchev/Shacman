@@ -1,152 +1,375 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 {% block content %}
-<header class="blog-header bg-white">
-    <nav class="container-xxl bd-gutter d-flex align-items-md-center navbar navbar-expand-lg navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="{% static 'main/img/logo.png' %}" alt="logo" width="200" >
-        </a>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ms-md-auto me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Каталог</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Преимущества</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Оплата и доставка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Гарантия и сервис</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-            <a class="link-secondary mt-2" href="#" aria-label="Search">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Поиск</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
-            </a>
-              <a id="button-nav1" class="button-nav1 cc-btn" data-modalid="modal-ce4ec10">Заказать звонок</a>
-          </ul>
-        </div>
-      </div>
-    </nav>
-</header>
-<section class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="{% static 'main/img/truck.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Китайские седельные тягачи с доставкой из Минска</h1>
-        <p class="lead">Chinatruckbel занимается поставкой и продажей тягачей из Китая. Наша компания специализируется на продаже качественных седельных тягачей, которые отвечают самым высоким требованиям и стандартам.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="ml-0 button-nav1 btn-lg px-4 me-md-2">Перейти к каталогу</button>
-        </div>
-      </div>
-    </div>
-</section>
-<section id="advantages" class="section-c5431fc cc-sct">
-    <div id="advantages-wrapper" class="section-c5431fc-wrapper cc-wrapper">
-        <h2 id="heading-cb5a6af" class="heading-c9fd113">Преимущества наших тягачей</h2>
-        <div id="columns-c0ef5de" class="columns-cf46a82">
-            <div id="column-c380494" class="column-cebc759 cc-clmn">
-                <img decoding="async" id="image-ccb867e" class="image-c850b36 cc-img" src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1.webp" srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1.webp 1045w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-300x258.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-1024x882.webp 1024w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-768x661.webp 768w" sizes="(max-width: 1045px) 100vw, 1045px" width="1045" height="900" alt="о нас" loading="lazy">
-            </div>
-            <div id="column-cf67a55" class="column-cc01c2c cc-clmn">
-                <div id="div-ce32a80" class="div-caec92c">
-                    <div id="div-c056a3e" class="div-cf05898 adv-item">
-                        <div id="icon-c09cbe9" class="icon-c9a10ce adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-cc671e3" class="div-c253e38 adv-item-info">
-                            <p id="paragraph-cd8cf1c" class="paragraph-cfec582 adv-item-title">Доступность</p>
-                            <p id="paragraph-c0f4fe5" class="paragraph-cee0d67 adv-item-desc">Наши седельные тягачи часто стоят дешевле, чем аналоги от других производителей, что делает их более доступными для широкого круга потребителей.</p>
-                        </div>
-                    </div>
-                    <div id="div-c32932f" class="div-c79da47 adv-item">
-                        <div id="icon-cc6665d" class="icon-c80d994 adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-c216b74" class="div-c2637aa adv-item-info">
-                            <p id="paragraph-c886090" class="paragraph-c9d08b9 adv-item-title">Низкие расходы</p>
-                            <p id="paragraph-c726977" class="paragraph-cf42bc5 adv-item-desc">Наши тягачи, как правило, имеют низкие эксплуатационные расходы благодаря более экономичным двигателям и комплектующим. Это может снизить общую стоимость владения грузовиком.</p>
-                        </div>
-                    </div>
-                    <div id="div-c837921" class="div-ccad348 adv-item">
-                        <div id="icon-ca6c3d1" class="icon-c1dd14a adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-c23758c" class="div-c6f1ae2 adv-item-info">
-                            <p id="paragraph-c6aecce" class="paragraph-cd43f78 adv-item-title">Хороший выбор</p>
-                            <p id="paragraph-c145fcd" class="paragraph-ca89c8a adv-item-desc">Наличие моделей седельных тягачей очень разнообразен, что дает покупателям возможность выбрать модель, которая лучше всего соответствует вашим потребностям и бюджету.</p>
-                        </div>
-                    </div>
-                    <div id="div-c70cb00" class="div-cd7c5c5 adv-item">
-                        <div id="icon-c82d58b" class="icon-c5f8bd7 adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-ca5d602" class="div-ce3be00 adv-item-info">
-                            <p id="paragraph-c931d97" class="paragraph-c7e62c7 adv-item-title">Высокий уровень технологий</p>
-                            <p id="paragraph-ce04464" class="paragraph-c144ef8 adv-item-desc">Производители активно внедряют новые технологии в производство, что может означать более современные и качественные тягачи, которые удовлетворят потребности современного рынка.</p>
-                    </div>
-                    </div>
-                    <div id="div-c4e9f21" class="div-c79b543 adv-item">
-                        <div id="icon-c45a86e" class="icon-cdd3702 adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-cbed8bb" class="div-cb2a71b adv-item-info">
-                            <p id="paragraph-c9317af" class="paragraph-ceb210d adv-item-title">Гибкость в настройке</p>
-                            <p id="paragraph-c56b6a9" class="paragraph-c68c0f8 adv-item-desc">Производители часто могут предоставить гибкость в настройке тягачей под конкретные требования покупателей, что делает их более адаптивными.</p>
-                        </div>
-                    </div>
-                    <div id="div-c6a3622" class="div-c05a0d9 adv-item">
-                        <div id="icon-c48ded1" class="icon-c3b5f01 adv-item-icon cc-icn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path></svg></div>
-                        <div id="div-c0924ce" class="div-c2de02e adv-item-info">
-                            <p id="paragraph-cf15222" class="paragraph-c08ac54 adv-item-title">Надежность продукции</p>
-                            <p id="paragraph-cbc6c3b" class="paragraph-c7aba3a adv-item-desc">Существует множество китайских компаний, которые производят седельные тягачи, и качество их продукции может сильно отличаться. Мы отслеживаем и выбираем только лучшие надежные и безопасные тягачи.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="about" class="section-cf0af40 cc-sct">
-    <div id="about-wrapper" class="section-cf0af40-wrapper cc-wrapper">
-        <div id="columns-c7fc972" class="columns-c2e361c">
-        <div id="column-ca334b3" class="column-c608199 cc-clmn">
-            <h2 id="heading-c7b94f6" class="heading-c5533ea">О компании</h2>
-            <p id="paragraph-c0bbea8" class="paragraph-c56b770">Мы работаем напрямую с производителями тягачей в Китае, что позволяет нам предлагать нашим клиентам самые конкурентные цены на рынке. Наша компания занята продажей тягачей уже много лет, и мы зарекомендовали себя как надежный поставщик грузовых автомобилей.</p>
-            <p id="paragraph-c0e9b00" class="paragraph-c3139f9">Мы предлагаем широкий выбор тягачей различных марок и моделей, которые могут удовлетворить самые разнообразные потребности клиентов. </p>
-            <p id="paragraph-c73aed3" class="paragraph-c3e6219">Седельные тягачи <strong>SITRAK</strong></p>
-            <p id="paragraph-cc18e96" class="paragraph-c229ea7">Седельные тягачи <strong>FAW</strong></p>
-            <p id="paragraph-cdefd28" class="paragraph-c70c74b">Седельные тягачи <strong>FOTON AUMAN</strong></p>
-            <p id="paragraph-c9b2287" class="paragraph-cfbc006">Грузовые самосвалы <strong>Shacman</strong></p>
-            <p id="paragraph-c8e321a" class="paragraph-c443ddc">Наши тягачи отличаются высоким качеством, надежностью и безопасностью. Мы гарантируем, что каждый тягач, который мы продаем, пройдет тщательную проверку перед отправкой клиенту.</p>
-            <p id="paragraph-c6c2ac9" class="paragraph-c53467c">Chinatruckbel предлагает широкий спектр услуг по обслуживанию тягачей и запасных частей. Мы заботимся о своих клиентах и всегда готовы помочь вам с любыми вопросами, связанными с выбором тягача или его обслуживанием.</p>
-            <p id="paragraph-c3588af" class="paragraph-c486f7c">Мы убеждены, что наши тягачи могут помочь вам повысить эффективность работы вашей транспортной компании.</p>
-            <p id="paragraph-cd51b70" class="paragraph-cf9871b"><strong>Если вы ищете надежного поставщика грузовых автомобилей, то обратитесь к нам! Мы всегда готовы предложить вам самые лучшие условия сотрудничества.</strong></p>
-        </div>
-        <div id="column-cbfcbf5" class="column-c20d595 cc-clmn">
-            <img decoding="async" id="image-c4aa126" class="image-c3f03eb cc-img" src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW.webp" srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW.webp 250w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW-150x150.webp 150w" sizes="(max-width: 250px) 100vw, 250px" width="250" height="250" alt="Главная страница">
-            <img decoding="async" id="image-c765f2f" class="image-c8ececc cc-img" src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/SITRAK.webp" srcset="" sizes="(max-width: 258px) 100vw, 258px" width="258" height="250" alt="Главная страница">
-            <img loading="lazy" decoding="async" id="image-c7342f5" class="image-cd7ec8f cc-img" src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman.webp" srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman.webp 969w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman-300x77.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman-768x198.webp 768w" sizes="(max-width: 969px) 100vw, 969px" width="969" height="250" alt="Главная страница">
-            <img loading="lazy" decoding="async" id="image-c471765" class="image-c9272d8 cc-img" src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON.webp" srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON.webp 875w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON-300x86.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON-768x219.webp 768w" sizes="(max-width: 875px) 100vw, 875px" width="875" height="250" alt="Главная страница">
-        </div>
-        </div>
-    </div>
-</section>
-<section id="delivery" class="section-cb3e2f3 cc-sct">
-    <div id="delivery-wrapper" class="section-cb3e2f3-wrapper cc-wrapper">
-        <div id="columns-c35c587" class="columns-c6b01e3">
-            <div id="column-c554953" class="column-ca8fb27 cc-clmn">
-                <h3 id="heading-c640c84" class="heading-c86aea8">Оплата</h3>
-                <p id="paragraph-c66eff1" class="paragraph-c4b81b1">У нас есть возможность оплаты через лизинг. Этот способ позволит вам получить тягач без необходимости выкупать их сразу.</p>
-            </div>
-            <div id="column-ce072b7" class="column-c88507b cc-clmn">
-                <h3 id="heading-cb7f385" class="heading-ca07ec9">Доставка</h3>
-                <p id="paragraph-ca18645" class="paragraph-cd7066c">Мы оговариваем условия доставки отдельно с каждым клиентом, чтобы найти оптимальный вариант, который подойдет именно для вас.</p>
-            </div>
-        </div>
-        <div id="div-c899633" class="div-c323f5f">
-            <p id="paragraph-ce9a3f4" class="paragraph-c5ef3ab">Наша компания гарантирует высокое качество товаров, и поэтому мы предлагаем нашим клиентам <strong>12-месячную гарантию</strong> на седельные китайские тягачи. Это означает, что вы можете быть уверены в качестве нашей продукции и в случае каких-либо проблем, мы будем рады помочь вам решить их.</p>
-        </div>
-    </div>
-</section>
+	<header class="blog-header bg-white">
+		<nav class="container-xxl bd-gutter d-flex align-items-md-center navbar navbar-expand-lg navbar-light ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="{% static 'main/img/logo.png' %}" alt="logo" width="200">
+				</a>
+				<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<ul class="navbar-nav ms-md-auto me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Каталог</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Преимущества</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Оплата и доставка</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Гарантия и сервис</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+						<a class="link-secondary mt-2" href="#" aria-label="Search">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+							     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							     class="mx-3" role="img" viewBox="0 0 24 24"><title>Поиск</title>
+								<circle cx="10.5" cy="10.5" r="7.5"></circle>
+								<path d="M21 21l-5.2-5.2"></path>
+							</svg>
+						</a>
+						<a id="button-nav1" class="button-nav1 cc-btn" data-modalid="modal-ce4ec10">Заказать звонок</a>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section id="visitpage" class="container col-xxl-8 px-4 py-5">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+			<div class="col-10 col-sm-8 col-lg-6">
+				<img src="{% static 'main/img/truck.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+				     width="700" height="500" loading="lazy">
+			</div>
+			<div class="col-lg-6">
+				<h1 class="display-5 fw-bold lh-1 mb-3">Китайские седельные тягачи с доставкой из Минска</h1>
+				<p class="lead mb-3">Chinatruckbel занимается поставкой и продажей тягачей из Китая. Наша компания
+					специализируется на продаже качественных седельных тягачей, которые отвечают самым высоким
+					требованиям и стандартам.</p>
+				<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<button type="button" class="ml-0 button-nav1 btn-lg px-4 me-md-2">Перейти к каталогу</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="advantages" class="section-c5431fc cc-sct">
+		<div id="advantages-wrapper" class="section-c5431fc-wrapper cc-wrapper">
+			<h2 id="heading-cb5a6af" class="heading-c9fd113">Преимущества наших тягачей</h2>
+			<div id="columns-c0ef5de" class="columns-cf46a82">
+				<div id="column-c380494" class="column-cebc759 cc-clmn">
+					<img decoding="async" id="image-ccb867e" class="image-c850b36 cc-img"
+					     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1.webp"
+					     srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1.webp 1045w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-300x258.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-1024x882.webp 1024w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/car-1-768x661.webp 768w"
+					     sizes="(max-width: 1045px) 100vw, 1045px" width="1045" height="900" alt="о нас" loading="lazy">
+				</div>
+				<div id="column-cf67a55" class="column-cc01c2c cc-clmn">
+					<div id="div-ce32a80" class="div-caec92c">
+						<div id="div-c056a3e" class="div-cf05898 adv-item">
+							<div id="icon-c09cbe9" class="icon-c9a10ce adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-cc671e3" class="div-c253e38 adv-item-info">
+								<p id="paragraph-cd8cf1c" class="paragraph-cfec582 adv-item-title">Доступность</p>
+								<p id="paragraph-c0f4fe5" class="paragraph-cee0d67 adv-item-desc">Наши седельные тягачи
+									часто стоят дешевле, чем аналоги от других производителей, что делает их более
+									доступными для широкого круга потребителей.</p>
+							</div>
+						</div>
+						<div id="div-c32932f" class="div-c79da47 adv-item">
+							<div id="icon-cc6665d" class="icon-c80d994 adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-c216b74" class="div-c2637aa adv-item-info">
+								<p id="paragraph-c886090" class="paragraph-c9d08b9 adv-item-title">Низкие расходы</p>
+								<p id="paragraph-c726977" class="paragraph-cf42bc5 adv-item-desc">Наши тягачи, как
+									правило, имеют низкие эксплуатационные расходы благодаря более экономичным
+									двигателям и комплектующим. Это может снизить общую стоимость владения
+									грузовиком.</p>
+							</div>
+						</div>
+						<div id="div-c837921" class="div-ccad348 adv-item">
+							<div id="icon-ca6c3d1" class="icon-c1dd14a adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-c23758c" class="div-c6f1ae2 adv-item-info">
+								<p id="paragraph-c6aecce" class="paragraph-cd43f78 adv-item-title">Хороший выбор</p>
+								<p id="paragraph-c145fcd" class="paragraph-ca89c8a adv-item-desc">Наличие моделей
+									седельных тягачей очень разнообразен, что дает покупателям возможность выбрать
+									модель, которая лучше всего соответствует вашим потребностям и бюджету.</p>
+							</div>
+						</div>
+						<div id="div-c70cb00" class="div-cd7c5c5 adv-item">
+							<div id="icon-c82d58b" class="icon-c5f8bd7 adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-ca5d602" class="div-ce3be00 adv-item-info">
+								<p id="paragraph-c931d97" class="paragraph-c7e62c7 adv-item-title">Высокий уровень
+									технологий</p>
+								<p id="paragraph-ce04464" class="paragraph-c144ef8 adv-item-desc">Производители активно
+									внедряют новые технологии в производство, что может означать более современные и
+									качественные тягачи, которые удовлетворят потребности современного рынка.</p>
+							</div>
+						</div>
+						<div id="div-c4e9f21" class="div-c79b543 adv-item">
+							<div id="icon-c45a86e" class="icon-cdd3702 adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-cbed8bb" class="div-cb2a71b adv-item-info">
+								<p id="paragraph-c9317af" class="paragraph-ceb210d adv-item-title">Гибкость в
+									настройке</p>
+								<p id="paragraph-c56b6a9" class="paragraph-c68c0f8 adv-item-desc">Производители часто
+									могут предоставить гибкость в настройке тягачей под конкретные требования
+									покупателей, что делает их более адаптивными.</p>
+							</div>
+						</div>
+						<div id="div-c6a3622" class="div-c05a0d9 adv-item">
+							<div id="icon-c48ded1" class="icon-c3b5f01 adv-item-icon cc-icn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+									<path d="M15.281 18.516c0 3.187-2.281 5.703-5.594 6.25v2.734c0 0.281-0.219 0.5-0.5 0.5h-2.109c-0.266 0-0.5-0.219-0.5-0.5v-2.734c-3.656-0.516-5.656-2.703-5.734-2.797-0.156-0.187-0.172-0.453-0.031-0.641l1.609-2.109c0.078-0.109 0.219-0.172 0.359-0.187s0.281 0.031 0.375 0.141c0.031 0.016 2.219 2.109 4.984 2.109 1.531 0 3.187-0.812 3.187-2.578 0-1.5-1.844-2.234-3.953-3.078-2.812-1.109-6.312-2.516-6.312-6.438 0-2.875 2.25-5.25 5.516-5.875v-2.812c0-0.281 0.234-0.5 0.5-0.5h2.109c0.281 0 0.5 0.219 0.5 0.5v2.75c3.172 0.359 4.859 2.078 4.922 2.141 0.156 0.172 0.187 0.406 0.078 0.594l-1.266 2.281c-0.078 0.141-0.203 0.234-0.359 0.25-0.156 0.031-0.297-0.016-0.422-0.109-0.016-0.016-1.906-1.687-4.25-1.687-1.984 0-3.359 0.984-3.359 2.406 0 1.656 1.906 2.391 4.125 3.25 2.875 1.109 6.125 2.375 6.125 6.141z"></path>
+								</svg>
+							</div>
+							<div id="div-c0924ce" class="div-c2de02e adv-item-info">
+								<p id="paragraph-cf15222" class="paragraph-c08ac54 adv-item-title">Надежность
+									продукции</p>
+								<p id="paragraph-cbc6c3b" class="paragraph-c7aba3a adv-item-desc">Существует множество
+									китайских компаний, которые производят седельные тягачи, и качество их продукции
+									может сильно отличаться. Мы отслеживаем и выбираем только лучшие надежные и
+									безопасные тягачи.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="section-cf0af40 cc-sct">
+		<div id="about-wrapper" class="section-cf0af40-wrapper cc-wrapper">
+			<div id="columns-c7fc972" class="columns-c2e361c">
+				<div id="column-ca334b3" class="column-c608199 cc-clmn">
+					<h2 id="heading-c7b94f6" class="heading-c5533ea">О компании</h2>
+					<p id="paragraph-c0bbea8" class="paragraph-c56b770">Мы работаем напрямую с производителями тягачей в
+						Китае, что позволяет нам предлагать нашим клиентам самые конкурентные цены на рынке. Наша
+						компания занята продажей тягачей уже много лет, и мы зарекомендовали себя как надежный поставщик
+						грузовых автомобилей.</p>
+					<p id="paragraph-c0e9b00" class="paragraph-c3139f9">Мы предлагаем широкий выбор тягачей различных
+						марок и моделей, которые могут удовлетворить самые разнообразные потребности клиентов. </p>
+					<p id="paragraph-c73aed3" class="paragraph-c3e6219">Седельные тягачи <strong>SITRAK</strong></p>
+					<p id="paragraph-cc18e96" class="paragraph-c229ea7">Седельные тягачи <strong>FAW</strong></p>
+					<p id="paragraph-cdefd28" class="paragraph-c70c74b">Седельные тягачи <strong>FOTON AUMAN</strong>
+					</p>
+					<p id="paragraph-c9b2287" class="paragraph-cfbc006">Грузовые самосвалы <strong>Shacman</strong></p>
+					<p id="paragraph-c8e321a" class="paragraph-c443ddc">Наши тягачи отличаются высоким качеством,
+						надежностью и безопасностью. Мы гарантируем, что каждый тягач, который мы продаем, пройдет
+						тщательную проверку перед отправкой клиенту.</p>
+					<p id="paragraph-c6c2ac9" class="paragraph-c53467c">Chinatruckbel предлагает широкий спектр услуг по
+						обслуживанию тягачей и запасных частей. Мы заботимся о своих клиентах и всегда готовы помочь вам
+						с любыми вопросами, связанными с выбором тягача или его обслуживанием.</p>
+					<p id="paragraph-c3588af" class="paragraph-c486f7c">Мы убеждены, что наши тягачи могут помочь вам
+						повысить эффективность работы вашей транспортной компании.</p>
+					<p id="paragraph-cd51b70" class="paragraph-cf9871b"><strong>Если вы ищете надежного поставщика
+						грузовых автомобилей, то обратитесь к нам! Мы всегда готовы предложить вам самые лучшие условия
+						сотрудничества.</strong></p>
+				</div>
+				<div id="column-cbfcbf5" class="column-c20d595 cc-clmn">
+					<img decoding="async" id="image-c4aa126" class="image-c3f03eb cc-img"
+					     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW.webp"
+					     srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW.webp 250w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FAW-150x150.webp 150w"
+					     sizes="(max-width: 250px) 100vw, 250px" width="250" height="250" alt="Главная страница">
+					<img decoding="async" id="image-c765f2f" class="image-c8ececc cc-img"
+					     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/SITRAK.webp" srcset=""
+					     sizes="(max-width: 258px) 100vw, 258px" width="258" height="250" alt="Главная страница">
+					<img loading="lazy" decoding="async" id="image-c7342f5" class="image-cd7ec8f cc-img"
+					     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman.webp"
+					     srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman.webp 969w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman-300x77.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/Shacman-768x198.webp 768w"
+					     sizes="(max-width: 969px) 100vw, 969px" width="969" height="250" alt="Главная страница">
+					<img loading="lazy" decoding="async" id="image-c471765" class="image-c9272d8 cc-img"
+					     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON.webp"
+					     srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON.webp 875w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON-300x86.webp 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/FOTON-768x219.webp 768w"
+					     sizes="(max-width: 875px) 100vw, 875px" width="875" height="250" alt="Главная страница">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="delivery" class="section-cb3e2f3 cc-sct">
+		<div id="delivery-wrapper" class="section-cb3e2f3-wrapper cc-wrapper">
+			<div id="columns-c35c587" class="columns-c6b01e3">
+				<div id="column-c554953" class="column-ca8fb27 cc-clmn">
+					<h3 id="heading-c640c84" class="heading-c86aea8">Оплата</h3>
+					<p id="paragraph-c66eff1" class="paragraph-c4b81b1">У нас есть возможность оплаты через лизинг. Этот
+						способ позволит вам получить тягач без необходимости выкупать их сразу.</p>
+				</div>
+				<div id="column-ce072b7" class="column-c88507b cc-clmn">
+					<h3 id="heading-cb7f385" class="heading-ca07ec9">Доставка</h3>
+					<p id="paragraph-ca18645" class="paragraph-cd7066c">Мы оговариваем условия доставки отдельно с
+						каждым клиентом, чтобы найти оптимальный вариант, который подойдет именно для вас.</p>
+				</div>
+			</div>
+			<div id="div-c899633" class="div-c323f5f">
+				<p id="paragraph-ce9a3f4" class="paragraph-c5ef3ab">Наша компания гарантирует высокое качество товаров,
+					и поэтому мы предлагаем нашим клиентам <strong>12-месячную гарантию</strong> на седельные китайские
+					тягачи. Это означает, что вы можете быть уверены в качестве нашей продукции и в случае каких-либо
+					проблем, мы будем рады помочь вам решить их.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacts" class="section-c971976 cc-sct">
+		<div id="contacts-wrapper" class="section-c971976-wrapper cc-wrapper">
+			<div id="div-cc7f2a8" class="div-c5fd2d8">
+				<h2 id="heading-ce85edf" class="heading-c172b8f">Контакты</h2>
+				<p id="paragraph-c821261" class="paragraph-c209eff">Свяжитесь с нами любым удобным способом.&nbsp;</p>
+				<div id="div-c4cd832" class="div-cfaa048 contats-item">
+					<div id="icon-c2b8f0a" class="icon-ceda4ca contats-item-icon cc-icn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+							<path d="M12 10c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM16 10c0 0.953-0.109 1.937-0.516 2.797l-5.688 12.094c-0.328 0.688-1.047 1.109-1.797 1.109s-1.469-0.422-1.781-1.109l-5.703-12.094c-0.406-0.859-0.516-1.844-0.516-2.797 0-4.422 3.578-8 8-8s8 3.578 8 8z"></path>
+						</svg>
+					</div>
+					<p class="has-object-object-font-size">г. Минск, ул. Домбровская 9, 3 этаж, офис 3.3.3</p>
+				</div>
+				<a id="div-cffc1ec" class="div-c24d219 contats-item" href="tel:+375296038207" rel="noopener"
+				   target="_self">
+					<div id="icon-c6c99fc" class="icon-c41b63c contats-item-icon cc-icn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 28">
+							<path d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"></path>
+						</svg>
+					</div>
+					<p id="paragraph-c43159b" class="paragraph-ccc1dc0 contats-item-desc">+375 29 603 82 07</p>
+				</a>
+				<a id="div-c98d86a" class="div-c2061bf contats-item" href="tel:+375296038246" rel="noopener"
+				   target="_self">
+					<div id="icon-c11fff6" class="icon-c28e0de contats-item-icon cc-icn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 28">
+							<path d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"></path>
+						</svg>
+					</div>
+					<p id="paragraph-cff513d" class="paragraph-cb7fb47 contats-item-desc">+375 29 603 82 46</p>
+				</a>
+			</div>
+			<a id="div-c110737" class="div-cc85412 " href="https://yandex.by/maps/-/CTxNb1b" rel="noopener"
+			   target="_blank">
+				<img loading="lazy" decoding="async" id="image-cc6c79b" class="image-cb3f0d6 cc-img"
+				     src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/12/xhina-map-by.jpg"
+				     srcset="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/12/xhina-map-by.jpg 1398w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/12/xhina-map-by-300x218.jpg 300w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/12/xhina-map-by-1024x745.jpg 1024w, https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/12/xhina-map-by-768x559.jpg 768w"
+				     sizes="(max-width: 1398px) 100vw, 1398px" width="1398" height="1017" alt="Главная страница">
+			</a>
+		</div>
+	</section>
+
+	<section id="section-c12f5dc"
+	         class="section-c98afa8 cc-sct">
+		<div id="section-c12f5dc-wrapper" class="section-c98afa8-wrapper cc-wrapper">
+			<div id="div-ca268df" class="div-c079482">
+				<h3 id="heading-cd7632d" class="heading-c2c4e80">Остались вопросы?</h3>
+
+
+				<p id="paragraph-cadb1ab"
+				   class="paragraph-c76f975">Оставьте заявку и с Вами свяжется наш менеджер и ответит на все
+					интересующие
+					вопросы.</p>
+
+
+				<div class="fluentform ff-default fluentform_wrapper_1  ff_guten_block ffs_default_wrap">
+					<form data-form_id="1" id="fluentform_1"
+					      class="frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ffs_default ff-form-loaded"
+					      data-form_instance="ff_form_instance_1_1" method="POST">
+						<fieldset
+								style="border: none!important;margin: 0!important;padding: 0!important;background-color: transparent!important;box-shadow: none!important;outline: none!important; min-inline-size: 100%;">
+							<legend class="ff_screen_reader_title"
+							        style="display: block; margin: 0!important;padding: 0!important;height: 0!important;text-indent: -999999px;width: 0!important;overflow:hidden;">
+								Contact Form
+							</legend>
+							<input type="hidden" name="__fluent_form_embded_post_id" value="158"><input type="hidden"
+							                                                                            id="_fluentform_1_fluentformnonce"
+							                                                                            name="_fluentform_1_fluentformnonce"
+							                                                                            value="f74d30bf40"><input
+								type="hidden" name="_wp_http_referer" value="/">
+							<div data-type="name-element" data-name="names"
+							     class=" ff-field_container ff-name-field-wrapper">
+								<div class="ff-t-container">
+									<div class="ff-t-cell ">
+										<div class="ff-el-group  ff-el-form-hide_label">
+											<div class="ff-el-input--label ff-el-is-required asterisk-right"><label
+													for="ff_1_names_first_name_" aria-label="Имя">Имя</label></div>
+											<div class="ff-el-input--content"><input type="text"
+											                                         name="names[first_name]"
+											                                         id="ff_1_names_first_name_"
+											                                         class="ff-el-form-control"
+											                                         placeholder="Имя"
+											                                         aria-invalid="false"
+											                                         aria-required="false"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ff-el-group ff-el-form-hide_label">
+								<div class="ff-el-input--label ff-el-is-required asterisk-right"><label
+										for="ff_1_input_mask" aria-label="Номер телефона">Номер телефона</label></div>
+								<div class="ff-el-input--content"><input type="text" name="input_mask"
+								                                         class="ff-el-form-control"
+								                                         placeholder="Номер телефона"
+								                                         data-name="input_mask"
+								                                         id="ff_1_input_mask" aria-invalid="false"
+								                                         aria-required="true"></div>
+							</div>
+							<div class="ff-el-group ff-text-center ff_submit_btn_wrapper">
+								<button type="submit" class="ff-btn ff-btn-submit ff-btn-md ff_btn_style">Отправить
+								</button>
+							</div>
+						</fieldset>
+					</form>
+					<div id="fluentform_1_errors"
+					     class="ff-errors-in-stack ff_form_instance_1_1 ff-form-loading_errors ff_form_instance_1_1_errors"></div>
+				</div>
+				<script type="text/javascript">
+                    window.fluent_form_ff_form_instance_1_1 = {
+                        "id": "1",
+                        "settings": {
+                            "layout": {
+                                "labelPlacement": "top",
+                                "helpMessagePlacement": "with_label",
+                                "errorMessagePlacement": "inline",
+                                "cssClassName": "",
+                                "asteriskPlacement": "asterisk-right"
+                            }, "restrictions": {"denyEmptySubmission": {"enabled": false}}
+                        },
+                        "form_instance": "ff_form_instance_1_1",
+                        "form_id_selector": "fluentform_1",
+                        "rules": {
+                            "names[first_name]": {
+                                "required": {
+                                    "value": true,
+                                    "message": "\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u043c"
+                                }
+                            },
+                            "names[middle_name]": {"required": {"value": false, "message": "This field is required"}},
+                            "names[last_name]": {"required": {"value": false, "message": "This field is required"}},
+                            "input_mask": {
+                                "required": {
+                                    "value": true,
+                                    "message": "\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043f\u043e\u043b\u0435"
+                                }
+                            }
+                        }
+                    };
+				</script>
+			</div>
+		</div>
+	</section>
 {% endblock %}
 
