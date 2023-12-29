@@ -1507,7 +1507,7 @@ h3 {
         background-image: url(https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/06/bg-contacts-form.webp);
         background-attachment: unset;
         background-size: contain;
-        background-position: 0% 100%;
+        background-position: 50%;
         background-repeat: no-repeat;
         overflow: hidden;
     }
@@ -1518,7 +1518,7 @@ h3 {
     }
 
     .div-c079482 {
-        background-color: #ffffff;
+        background-color: rgba(255,255,255,0.9);
         border-radius: 15px;
         box-shadow: 0px 5px 30px -5px #33333314;
         margin-left: auto;
@@ -1527,14 +1527,14 @@ h3 {
     }
 
     .heading-c2c4e80 {
-        color: var(--cc-color-2);
+        color: black;
         font-size: 48px;
         line-height: 1.1em;
         margin-bottom: 16px;
     }
 
     .paragraph-c76f975 {
-        color: #333333cc;
+        color: black;
         font-size: 18px;
         margin-bottom: 35px;
     }
