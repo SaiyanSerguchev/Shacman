@@ -122,93 +122,18 @@
 		<div id="catalog-wrapper" class="section-cd59dc1-wrapper cc-wrapper">
 			<h2 id="heading-cb41414" class="heading-cb6d57c">Каталог тягачей</h2>
 			<ul class="truck-wrap">
+				{% for post in tr %}
 				<li>
 					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
+							src="{{ post.img.url }}"
 							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
+					<h3>{{ post.name }}</h3>
+					<div class="desc"><p>{{ post.minidescription }}</p>
 					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
+					<a href="{% url 'trucks' post.slug %}"
 					   class="btn-border">Подробнее</a>
 				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>				<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
-								<li>
-					<div><img
-							src="https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/2023/08/mercedes-actros-c-red-chinatruckbel.jpg"
-							lazy="loading" decoding="async"></div>
-					<h3>Mercedes-Benz Actros C</h3>
-					<div class="desc"><p>Mercedes-Benz запустил производство специальной версии «Actros C» на китайском
-						заводе корпорации Daimler Trucks!</p>
-					</div>
-					<a href="https://xn--80aawkmtn0b.xn--90ais/truck/mercedes-actros-c/"
-					   class="btn-border">Подробнее</a>
-				</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</section>

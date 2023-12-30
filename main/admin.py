@@ -1,3 +1,6 @@
 from django.contrib import admin
-
-# Register your models here.
+from main.models import Truck
+@admin.register(Truck)
+class TruckAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"slug": ("name",)}
+    pass
