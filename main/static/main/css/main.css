@@ -2434,12 +2434,12 @@ h2 {
 
     .btn-blue {
         cursor: pointer;
-        background-color: var(--cc-color-1);
-        border-color: var(--cc-color-1);
+        background-color: #12629E;
+        border-color: #12629E;
         border-radius: 5px;
         border-width: 2px;
         border-style: solid;
-        color: var(--cc-color-4);
+        color: white;
         font-size: 18px;
         text-decoration: none;
         text-transform: none;
@@ -2463,12 +2463,12 @@ h2 {
 
     .btn-border {
         cursor: pointer;
-        background-color: var(--cc-color-4);
-        border-color: var(--cc-color-1);
+        background-color: white;
+        border-color: #12629E;
         border-radius: 5px;
         border-width: 2px;
         border-style: solid;
-        color: var(--cc-color-1);
+        color: #12629E;
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
@@ -2492,7 +2492,7 @@ h2 {
     }
 
     .truck-page-tab:active {
-        border-color: var(--cc-color-1);
+        border-color: #12629E;
         border-radius: 0px;
         border-width: 0px 0px 3px;
         border-style: solid;
@@ -2526,7 +2526,7 @@ h2 {
 /*! CSS Used from: https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/cwicly/css/cc-tp-cwicly_single-truck.css?ver=1700807520 ; media=all */
 @media all {
     .div-c7cfe46 {
-        margin-top: -64px;
+
     }
 
     .section-c305106 {
@@ -2595,7 +2595,7 @@ h2 {
     }
 
     .tablist-c7ef6ef > .cc-tab-active {
-        border-color: var(--cc-color-1);
+        border-color: #12629E;
         border-radius: 0px;
         border-width: 0px 0px 3px;
         border-style: solid;
@@ -2887,3 +2887,4 @@ a:where(:not(.wp-element-button)) {
     font-weight: 700;
     src: url(https://xn--80aawkmtn0b.xn--90ais/wp-content/uploads/cwicly/local-fonts/custom/Inter/Inter-Bold.woff2) format('woff2');
 }
+
