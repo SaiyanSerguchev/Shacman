@@ -15,3 +15,11 @@ class TrucksDetailView(DetailView):
     model=Truck
     template_name='main/details_view.html'
     context_object_name = 'truck'
+
+
+def catalog(request):
+    truck = Truck.objects.all
+    context = {
+        'tr' : truck
+    }
+    return render(request, 'main/catalog.html', context)

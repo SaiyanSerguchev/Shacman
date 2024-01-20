@@ -1,0 +1,161 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="organization-listing"><h2 class="organization-listing__title">Объявления компании</h2>
+        <ul class="classify">
+            <li class="classify__item"><a class="classify__link " href="/company/transport/2904986/truck"><span>Грузовой транспорт</span><small>26</small></a>
+            </li>
+            <li class="classify__item"><a class="classify__link classify__link--active"
+                                          href="/company/transport/2904986/spec"><span>Спецтехника</span><small>9</small></a>
+            </li>
+        </ul>
+        <div class="overlay-container" aria-busy="false">
+            <div class="overlay overlay--area overlay--text" hidden="">
+                <div class="overlay__spinner"></div>
+                <span></span></div>
+            <div class="listing">
+                <div class="listing__container">
+                    <div class="listing__header">
+                        <div class="listing__filter">
+                            <div class="dropdown" id="p-4-category">
+                                <div class="dropdown__controls">
+                                    <div class="dropdown__box">
+                                        <button aria-pressed="false" class="dropdown__control dropdown-button"
+                                                name="p-4-category" title="Вид техники" type="button"><span
+                                                class="dropdown-button__value"><span
+                                                class="dropdown-button__placeholder">Вид техники</span></span></button>
+                                        <ul class="dropdown-list">
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button">Любой</button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="Дорожно-строительная техника"
+                                                        data-parent="false" data-property-label="Вид техники"
+                                                        data-property-name="category">Дорожно-строительная техника
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="Техника для бетона" data-parent="false"
+                                                        data-property-label="Вид техники" data-property-name="category">
+                                                    Техника для бетона
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing__sort">
+                            <div class="dropdown">
+                                <div class="dropdown__controls"><label class="dropdown__label" for="#">Сначала</label>
+                                    <div class="dropdown__box">
+                                        <button aria-pressed="false"
+                                                class="dropdown__control dropdown__control--active dropdown-link"
+                                                title="актуальные" type="button"><span class="dropdown-link__value">актуальные</span>
+                                        </button>
+                                        <ul class="dropdown-list">
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton dropdown__listbutton--selected"
+                                                        type="button" data-item-label="актуальные" data-parent="false">
+                                                    актуальные
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="дешёвые" data-parent="false">дешёвые
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="дорогие" data-parent="false">дорогие
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="новые объявления" data-parent="false">новые
+                                                    объявления
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="старые объявления" data-parent="false">старые
+                                                    объявления
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="новые по году" data-parent="false">новые по
+                                                    году
+                                                </button>
+                                            </li>
+                                            <li class="dropdown__listitem">
+                                                <button class="dropdown__listbutton" type="button"
+                                                        data-item-label="старые по году" data-parent="false">старые по
+                                                    году
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing__pages" hidden="">
+                        <div class="paging">
+                            <div class="paging__text">На странице 9 объявлений из 9</div>
+                        </div>
+                    </div>
+                    <div class="listing__items">
+                        {% for post in tr %}
+                            <div class="listing-item">
+                                <div class="listing-item__wrap">
+                                    <div class="listing-item__photo"><img
+                                        src="{{ post.img.url }}"
+                                        lazy="loading" decoding="async"></div>
+                                    <div class="listing-item__about"><h3 class="listing-item__title"><a
+                                            href="{% url 'trucks' post.slug %}"
+                                            class="listing-item__link">
+                                            <span class="link-text">{{ post.name }}</span></a></h3>
+                                        <div class="listing-item__badges"></div>
+                                    </div>
+                                    <div class="listing-item__prices">
+                                        <div class="listing-item__price">---cost---&nbsp;р.</div>
+                                        <div class="listing-item__priceusd">≈&nbsp;---cost---&nbsp;$</div>
+                                    </div>
+                                    <div class="listing-item__dealer"><span
+                                            class="link-text">ООО “ЧинаТракБел”</span></a></div>
+                                    <div class="listing-item__message">
+                                        <div>{{ post.minidescription }}
+                                        </div>
+                                    </div>
+                                    <div class="listing-item__info">
+                                        <div class="listing-item__location">Минск</div>
+                                        <div class="listing-item__date">16 ноября 2023</div>
+                                    </div>
+                                    <div class="listing-item__controls">
+                                        <button class="bookmark" title="Добавить в закладки" type="button">
+                                            <svg aria-hidden="true" height="32" viewBox="0 0 24 24" width="32"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentcolor">
+                                                <path class="stroke"
+                                                        d="M15.5 6h-7c-.274 0-.5.226-.5.5v9.757l3.981-2.661L16 16.269V6.5c0-.274-.226-.5-.5-.5zM7 4h10c.549 0 1 .451 1 1v14.068a.503.503 0 0 1-.777.416L11.984 16l-5.206 3.48A.5.5 0 0 1 6 19.064V5c0-.549.451-1 1-1z"></path>
+                                                <path class="fill"
+                                                        d="M7 4h10c.549 0 1 .451 1 1v14.068a.505.505 0 0 1-.777.416L11.984 16l-5.206 3.48A.5.5 0 0 1 6 19.064V5c0-.549.451-1 1-1z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="listing__pages" hidden="">
+                        <div class="paging">
+                            <div class="paging__text">На странице 9 объявлений из 9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
